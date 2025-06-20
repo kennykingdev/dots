@@ -120,11 +120,11 @@ alias cu="checkupdates"
 # Check after update to see if anything needs to be restarted
 alias cs="sudo checkservices"
 # Update official package(s)
-alias pu="sudo pacman -Syu --needed"
+alias pacup="sudo pacman -Syu --needed"
 # Install official package(s)
-alias pi="sudo pacman -S --needed"
+alias pacin="sudo pacman -S --needed"
 # Uninstall official package(s) and any no longer needed dependencies
-alias pun="sudo pacman -Rs"
+alias pacun="sudo pacman -Rs"
 # Use eza instead of ls
 alias ls="eza --icons --color=always --group-directories-first"
 alias ll="eza -lF --header --git --git-repos --icons --color=always --group-directories-first"
@@ -149,7 +149,6 @@ export _ZO_ECHO=1
 ### Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
-eval "$(thefuck --alias)"
 
 ### Custom Functions
 # create a directory and cd into it
